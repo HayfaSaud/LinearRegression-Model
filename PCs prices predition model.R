@@ -2,8 +2,8 @@
 library("Metrics")
 ####Data preparation:
 #1 import
-setwd("D:/PC prices prediction project/")
-computers = read.csv("Computers.csv")
+setwd("D:/PCs prices prediction project/")
+computers <- read.csv("Computers.csv")
 str(computers)
 computers$X<-NULL
 any(is.na(computers))  ##check null values
@@ -23,9 +23,6 @@ View(testData)
 ####model building
 #1 find the most significant variables and excluse tha variables with high F value 
 results <- lm(price~speed + hd + ram , trainingData) #model building
-test<-data.frame(33,85,2)
-pred1<-predict(results, test)
-pred1
 summary(results)
 plot(results)
 #price=b0+ b1speed + b2hd + b3ram + b4screen+err
