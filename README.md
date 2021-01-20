@@ -10,3 +10,4 @@ I used linear regression model to apply this solution for the foloowing reasons:
 2- Prediction is the main issue.
 3- Data discovering phase shows a linear relation between the price attribute and the independant attributes.
 
+
